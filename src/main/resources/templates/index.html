@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form enctype="multipart/form-data" method="POST" action="students/sort">
+    <span>CSV file: </span><input name="file" type="file" />
+    </br></br>
+    <span>Type of sort: </span>
+    <select name="type">
+        <option value="BUBBLE">Bubble</option>
+        <option value="MERGE">Merge</option>
+        <option value="HEAP">Heap</option>
+    </select>
+    </br></br>
+    <span>Write to a file?: </span>
+    <select name="isWrite">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+    </select>
+    </br></br>
+    <input type="submit" value="SORT"/>
+</form>
+</body>
+</html>
