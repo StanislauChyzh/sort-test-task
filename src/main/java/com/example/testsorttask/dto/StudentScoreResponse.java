@@ -12,5 +12,6 @@ import java.util.List;
 public class StudentScoreResponse {
 
     private Long processingTime;
+    private Integer studentAmount;
     private List<StudentDTO> students;
 }

@@ -38,7 +38,7 @@ public class StudentController {
             service.toCsv(students);
         }
         final var processingTime = getProcessingTime(startProcessing);
-        final var response = new StudentScoreResponse(processingTime, students);
+        final var response = new StudentScoreResponse(processingTime, students.size(), students);
         return ResponseEntity.ok(response);
     }
 
